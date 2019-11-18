@@ -35,7 +35,7 @@ public class ProducerController {
 
 
 
-    @RequestMapping("/user")
+    @PostMapping("/user")
     public void saveUser(@RequestBody User user){
         logger.info("开始创建user对象");
         logger.info("user对象实体:{}",user.toString());
